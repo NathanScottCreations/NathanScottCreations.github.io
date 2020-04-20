@@ -1,39 +1,36 @@
-<link rel="stylesheet" href="demo.css">
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Valley City Group</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+	.innermainMenu {margin: 0 auto; width: 1170px;}
+	.innermainMenu ul {margin:0; padding:80px 0 0; list-style:none;text-align:right;}
+	.innermainMenu ul li {float:none;display:inline-block;}
+	.innermainMenu ul li:nth-child(1) {float:left;}
+	.innermainMenu ul li:nth-child(2) {float:left;}
+	.innermainMenu ul li a {color:red; font-size:20px; text-transform: uppercase;text-decoration:none;display: block; padding: 10px 20px;}
+	.innermainMenu ul lia a:hover{color: black;}
+	#mainMenu{width: 100%; position:relative;}
+	.logoArea {width: 100px; height: 100px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-50px;}
 
-<ul class="text hidden">
-  <li>N</li>
-  <li class="ghost">T</li>
-  <li class="ghost">T</li>
-  <li>D</li>
-  <li class="ghost">A</li>
-  <li class="ghost">T</li>
-  <li class="ghost">A</li>
-  <li class="spaced">D</li>
-  <li class="ghost">e</li>
-  <li class="ghost">s</li>
-  <li class="ghost">i</li>
-  <li class="ghost">g</li>
-  <li class="ghost">n</li>
-  <li class="spaced">N</li>
-  <li class="ghost">e</li>
-  <li class="ghost">t</li>
-  <li class="ghost">w</li>
-  <li class="ghost">o</li>
-  <li class="ghost">r</li>
-  <li class="ghost">k</li>
-</ul>
+</style>
+</head>
 
-<script>
-$(function() {
-  var text = $(".text");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 200) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
-    }
-  });
-});
-</script>
+<nav>
+<div id="mainMenu">
+	<div class="logoArea">
+		<a href=""><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">;
+		<source id="mp4" src="logo2.mp4" type="video/mp4"></a>
+		<div class="innermainMenu">
+			<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
