@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="demo.css">
+
+<ul class="text hidden">
+  <li>N</li>
+  <li class="ghost">T</li>
+  <li class="ghost">T</li>
+  <li>D</li>
+  <li class="ghost">A</li>
+  <li class="ghost">T</li>
+  <li class="ghost">A</li>
+  <li class="spaced">D</li>
+  <li class="ghost">e</li>
+  <li class="ghost">s</li>
+  <li class="ghost">i</li>
+  <li class="ghost">g</li>
+  <li class="ghost">n</li>
+  <li class="spaced">N</li>
+  <li class="ghost">e</li>
+  <li class="ghost">t</li>
+  <li class="ghost">w</li>
+  <li class="ghost">o</li>
+  <li class="ghost">r</li>
+  <li class="ghost">k</li>
+</ul>
+
+<script>
+$(function() {
+  var text = $(".text");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+      text.removeClass("hidden");
+    } else {
+      text.addClass("hidden");
+    }
+  });
+});
+</script>
