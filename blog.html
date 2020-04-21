@@ -5,42 +5,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="VCGstyle.css">
+	
 	<style>
-			ul
-							{
-							list-style-type:none;
-							display:flex;
-							justify-content:space-around;	
-							}
-							
-			li 				{
-							text-decoration:none;
-							text-align: center;
-							width: 175px;
-							height:175px;		
-							}
+		#bg			{
+					background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.1)), url(mountain.jpg);
+					height: 550px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					}
 
-			a:link			{
-							color: #414141
-							}
-			a:hover 		{
-							color: #ebc600;
-							}
 	</style>
 </head>
 
-<nav>
-<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Services.html">Services</a></li>
-		<li><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width: 175px; height: 175px;">;
-		<source id="mp4" src="animatedLOGO.mp4" type="video/mp4">
-		</video></li>
-		<li><a href="Blog.html">Blog</a></li>
-		<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
-<body id="wrapper">
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Services.html">Services</a></li>
+			<li><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width: 150px; height: 150px;">;
+			<source id="mp4" src="logo2.mp4" type="video/mp4">
+			</video></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
 </body>
 </html>

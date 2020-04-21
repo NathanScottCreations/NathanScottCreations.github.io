@@ -1,36 +1,129 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<title>Valley City Group</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="VCGstyle.css">
 <style>
-	.innermainMenu {margin: 0 auto; width: 1170px;}
-	.innermainMenu ul {margin:0; padding:80px 0 0; list-style:none;text-align:right;}
-	.innermainMenu ul li {float:none;display:inline-block;}
-	.innermainMenu ul li:nth-child(1) {float:left;}
-	.innermainMenu ul li:nth-child(2) {float:left;}
-	.innermainMenu ul li a {color:red; font-size:20px; text-transform: uppercase;text-decoration:none;display: block; padding: 10px 20px;}
-	.innermainMenu ul lia a:hover{color: black;}
-	#mainMenu{width: 100%; position:relative;}
-	.logoArea {width: 100px; height: 100px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-50px;}
+html, body	{
+					height: 100%;
+					max-width:100%;
+					margin: auto;
+					}
+		section		{
+					max-width:80%;
+					margin-left:auto;
+					margin-right:auto;
+					}
+		h3			{
+					font-size:30px;
+					}
+					
+		.parallax 	{
+					background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.1)), url(mountain.jpg);
+
+					/* Full height */
+					height: 110%; 
+
+					/* Create the parallax scrolling effect */
+					background-attachment: fixed;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					}
+					
+		.parallax2 	{
+					background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.1)), url(city.jpg);
+
+					/* Full height */
+					height: 100%; 
+
+					/* Create the parallax scrolling effect */
+					background-attachment: fixed;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					}
+					
+		/*			
+		.vid		{
+					height: 100%;
+					width: 100%;
+					display: block;
+					width: auto;
+					margin: 0 auto;				
+					}*/
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+					
+		@font-face {
+	 font-family: "ubuntu";
+	 font-style: italic;
+	 font-weight: 300;
+	 src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+}
+
+h1 {
+	 color: #fff;
+	 font-size: 50px;
+	 font-family: "ubuntu";
+	 text-transform: uppercase;
+	 text-align: center;
+	 font-weight: 1000;
+	 font-family: "Josefin Sans", sans-serif;
+	 background: linear-gradient(to right, #ccad14 10%, #fff 50%, #262626 80%);
+	 background-size: auto auto;
+	 background-clip: border-box;
+	 background-size: 200% auto;
+	 color: #fff;
+	 background-clip: text;
+	 text-fill-color: transparent;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 animation: textclip 1.35s linear infinite;
+}
+ @keyframes textclip {
+	 to {
+		 background-position: 200% center;
+	}
+
 
 </style>
 </head>
+<body>
 
 <nav>
-<div id="mainMenu">
-	<div class="logoArea">
-		<a href=""><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">;
-		<source id="mp4" src="logo2.mp4" type="video/mp4"></a>
-		<div class="innermainMenu">
-			<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Services.html">Services</a></li>
-					<li><a href="Blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Services.html">Services</a></li>
+			<li><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">;
+			<source id="mp4" src="logo2.mp4" type="video/mp4">
+			</video></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+<div class="parallax"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h1>Valley City Group</h1><br><br><br></div>
+
+<div style="height:500px;background-color:white;font-size:36px">
+<section>
+About Us
+</section>
+</div>
+
+<div class="parallax2"></div>
+
+<div style="height:500px;background-color:white;font-size:36px">
+<section>
+About Us
+</section>
+</div>
+
+</body>
+</html>
