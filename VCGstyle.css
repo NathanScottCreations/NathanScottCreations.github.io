@@ -31,6 +31,24 @@
 					text-decoration:none;
 					}
 					
+		footer		{
+					position: relative;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #4d4d4d;
+					color: white;
+					text-align: center;
+					padding-bottom:.5%;
+					padding-top: .5%;
+					}
+					
+		footer div p a 	{
+						list-style-type: none;
+						text-decoration:none;
+						color:white;
+						}
+					
 		a:link		{
 					color: #414141
 					}
