@@ -9,20 +9,46 @@ html, body	{
 					max-width:100%;
 					margin: auto;
 					}
+					
 		section		{
 					max-width:80%;
 					margin-left:auto;
 					margin-right:auto;
 					}
+					
+		h2			{
+					}
+					
 		h3			{
 					font-size:30px;
 					}
 					
+		h4			{
+					}
+					
+		.row		{
+					display:flex;
+					}
+		
+		.column		{
+					flex: 50%;
+					padding-left:3%;
+					padding-right: 3%;
+					}
+					
+		.columnpic	{
+					flex: 50%;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+					}
+		
 		.parallax 	{
 					background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.1)), url(mountain.jpg);
 
 					/* Full height */
-					height: 110%; 
+					height: 100%; 
 
 					/* Create the parallax scrolling effect */
 					background-attachment: fixed;
@@ -43,15 +69,6 @@ html, body	{
 					background-repeat: no-repeat;
 					background-size: cover;
 					}
-					
-		/*			
-		.vid		{
-					height: 100%;
-					width: 100%;
-					display: block;
-					width: auto;
-					margin: 0 auto;				
-					}*/
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
@@ -100,9 +117,7 @@ h1 {
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="services.html">Services</a></li>
-			<li><video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">;
-			<source id="mp4" src="logo2.mp4" type="video/mp4">
-			</video></li>
+			<li><a href="index.html"><img src="logoTransparent.png" alt="logo" width="130" height="130" style="vertical-align:center; padding-top:6%;padding-bottom:1%;"></a></li>
 			<li><a href="blog.html">Blog</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
@@ -111,17 +126,42 @@ h1 {
 <div class="parallax"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<h1>Valley City Group</h1><br><br><br></div>
 
-<div style="height:500px;background-color:white;font-size:36px">
-<section>
-About Us
+<div style="height:500px;background-color:white;padding-top:1%;padding-bottom:1%;">
+	<section style="max-width:80%;height:100%;margin-left:auto;margin-right:auto;background-color:#F8F8F8;">
+		<p style="font-size:50px;">About Us</p>
+			<br><br>
+	<div class="row">
+		<div class="column">
+			<h2>Evan Walker</h2>
+				President & Chief Executive Officer, Baldiwn Wallace University '20
+				<br><br><br><br><br><br><br>
+		</div>
+		<div class="columnpic" style="background-image: url(EvanHeadShot.jpg);background-repeat: no-repeat;text-align:center;">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<h2>Nathan Scott</h2>
+				Executive Director, Baldwin Wallace Universtiy '20
+				<br><br><br><br><br><br><br>
+		</div>
+		<div class="columnpic" style="background-image: url(linked2.jpg);background-repeat: no-repeat;text-align:center;">
+		</div>
+	</div>
 </section>
 </div>
 
 <div class="parallax2"></div>
 
-<div style="height:500px;background-color:white;font-size:36px">
+<div style="height:500px;background-color:white;padding-top:1%;padding-bottom:1%;">
 <section>
 About Us
+
+
+
+
+
 </section>
 </div>
 
