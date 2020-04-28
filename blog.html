@@ -7,13 +7,27 @@
 	<link rel="stylesheet" href="VCGstyle.css">
 	
 	<style>
-		#bg			{
-					background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.1)), url(mountain.jpg);
-					height: 550px;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-size: cover;
+		#myVideo 	{
+					max-width: 100%; 
+					max-height: 100%;
+					width: auto;
+					height: auto;
+					object-fit: fill;
 					}
+					
+		.content 	{
+					position: absolute;
+					background: rgba(0, 0, 0, 0.4);
+					color: #f1f1f1;
+					width: auto;
+					margin:5%;
+					padding: 20px;
+					}
+		footer		{
+					position:relative;
+					margin:0;
+					}
+		
 
 	</style>
 </head>
@@ -22,15 +36,21 @@
 
 <nav>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="index.html"><img src="logoTransparent.png" alt="logo" width="130" height="130" style="vertical-align:center; padding-top:6%;padding-bottom:1%;"></a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="contact.html">Contact</a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="index.html"><img src="logoTransparent.png" alt="logo" width="130" height="130" style="vertical-align:center; padding-top:6%;padding-bottom:1%;"></a></li>
+		<li><a class="current" href="blog.html">Blog</a></li>
+		<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
-
-
+<div class="content">
+  <h1>Coming Soon</h1> 
+</div>
+<div>
+<video autoplay muted loop id="myVideo">
+<source src="manVid.mp4" type="video/mp4">
+</video>
+</div>
 <footer>
 	<div>
 		<p class="footer-links">
@@ -42,7 +62,7 @@
 			·
 			<a href="contact.html">Contact</a>
 		</p>
-		<p>Valley City Group LLC &copy; 2020</p>
+		<p>Valley City Group LLC &copy; 2020 All Rights Reserved</p>
 	</div>
 </footer>
 </body>

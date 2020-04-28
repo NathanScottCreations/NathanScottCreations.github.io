@@ -13,6 +13,12 @@
 					background-size: cover;
 					}
 					
+		html, body	{
+					height: 100%;
+					max-width:100%;
+					margin: auto;
+					}			
+					
 		nav ul		{
 					text-align: center;
 					}
@@ -48,6 +54,12 @@
 						text-decoration:none;
 						color:white;
 						}
+						
+		
+		.current	{
+					background-color:#F8F8F8;
+					text-decoration:underline;
+					}
 					
 		a:link		{
 					color: #414141
@@ -55,3 +67,4 @@
 		a:hover 	{
 					color: #ebc600;
 					}
+	
